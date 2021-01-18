@@ -1,4 +1,6 @@
-var age = prompt("Quel est ton age");
+import readlineSync from readlineSync;
+
+var age = readlineSync.question("Quel est ton age");
 
 if(this.age>=18){
     console.log("Vous êtes un adulte")

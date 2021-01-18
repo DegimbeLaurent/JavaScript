@@ -1,3 +1,5 @@
-var name = prompt("Quel est ton prenom");
+const readlineSync = require("readline-sync");
 
-console.log("Bonjours "+this.name);
+var nam = readlineSync.question('Ton nom ?')
+
+console.log("Bonjours "+nam);
