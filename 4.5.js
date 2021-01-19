@@ -1,0 +1,8 @@
+const readline = require("readline-sync");
+function calcDistance(x1,y1,x2,y2){
+    return Math.sqrt((calcPoint(x2,x1)+calcPoint(y2,y1)));
+}
+function calcPoint(n1,n2){
+    return Math.pow( (n2-n1) ,2);
+}
+console.log( calcDistance(readline.question("x1 ?"),readline.question("y1 ?"),readline.question("x2 ?"),readline.question("y2 ?")) );
